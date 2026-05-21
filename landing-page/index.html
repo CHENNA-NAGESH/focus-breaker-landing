@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Breaker - Break the Cycle, Reclaim Your Time</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Starfield background layers -->
+  <div class="stars-layer-1" aria-hidden="true"></div>
+  <div class="stars-layer-2" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-orb"></span>
+        <span class="logo-text">Focus Breaker</span>
+      </div>
+      <a href="#" class="btn-secondary">Developer Docs</a>
+    </div>
+  </header>
+
+  <main class="hero-section">
+    <div class="hero-container">
+      <span class="badge">Chrome Web Store Extension</span>
+      <h1>Break the Cycle.<br><span class="glow-text">Reclaim Your Focus.</span></h1>
+      <p class="subtitle">
+        A premium, dark-mode browser extension designed to curb website addiction through customizable sessions, automated blocking, and structured deep-breathing exercises.
+      </p>
+      
+      <div class="cta-group">
+        <a href="https://chrome.google.com/webstore" target="_blank" class="btn-primary">
+          <svg class="chrome-icon" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M20.93,11C20.44,6.47 16.63,3 12,3C7.37,3 3.56,6.47 3.07,11H5.07C5.54,7.56 8.47,5 12,5C15.53,5 18.46,7.56 18.93,11H20.93M18.93,13C18.46,16.44 15.53,19 12,19C8.47,19 5.54,16.44 5.07,13H3.07C3.56,17.53 7.37,21 12,21C16.63,21 20.44,17.53 20.93,13H18.93Z"/>
+          </svg>
+          Add to Chrome — It's Free
+        </a>
+      </div>
+
+      <div class="interactive-preview">
+        <!-- Mockup of the Blocked Page Screen -->
+        <div class="mockup-window">
+          <div class="mockup-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <div class="address-bar">youtube.com/blocked_by_focus_breaker</div>
+          </div>
+          <div class="mockup-content">
+            <div class="blocked-screen-preview">
+              <span class="preview-badge">Focus Breaker</span>
+              <h2>Take a Deep Breath</h2>
+              <p class="preview-desc">Focus session active. Use this time to decompress.</p>
+              
+              <div class="cosmic-container">
+                <div class="cosmic-orbit outer-orbit">
+                  <div class="comet comet-cyan"></div>
+                </div>
+                <div class="cosmic-orbit inner-orbit">
+                  <div class="comet comet-purple"></div>
+                </div>
+                
+                <div class="cosmic-ripple ripple-1"></div>
+                <div class="cosmic-ripple ripple-2"></div>
+                <div class="cosmic-ripple ripple-3"></div>
+                
+                <div class="cosmic-orb">
+                  <div class="countdown">
+                    <span>Remaining Time</span>
+                    <strong class="timer-display">00:01:45</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="breathing-guide">
+                <span class="breath-in">Inhale</span>
+                <span class="breath-out">Exhale</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="features-section">
+    <div class="section-container">
+      <h2>Engineered for Willpower.</h2>
+      <p class="section-desc">Experience a focus manager with state-of-the-art interactive aesthetics and native Chromium performance.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon cyan">⏱️</div>
+          <h3>Structured Sessions</h3>
+          <p>Set specific allowed browsing times followed by strict block intervals. Manage minutes with seamless precision.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon purple">🫁</div>
+          <h3>Breathing Assistance</h3>
+          <p>The blocked screen guides you through calm 8-second breathing cycles to help lower your heart rate and resist impulse clicking.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon coral">✨</div>
+          <h3>Gravity Warp Background</h3>
+          <p>Interactive star fields and nebula lights follow and slide with your cursor to create a fluid, parallax space depth.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green">🔒</div>
+          <h3>100% Local & Private</h3>
+          <p>No account needed. No analytical tracking. Your rules, history, and configuration never leave your browser storage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Focus Breaker. Built with love for deep work.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

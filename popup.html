@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Focus Breaker</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="popup-effects" aria-hidden="true"></div>
+    <main class="popup">
+      <header class="header">
+        <div class="mark" aria-hidden="true">F</div>
+        <div>
+          <h1>Focus Breaker</h1>
+          <p>Set a limit, then take a real break.</p>
+        </div>
+      </header>
+
+      <section class="status-panel" aria-live="polite">
+        <div>
+          <span class="status-label">Session status</span>
+          <strong id="statusText">Loading...</strong>
+        </div>
+        <span id="timerText" class="timer-text"></span>
+      </section>
+
+      <form id="settingsForm" class="form">
+        <div class="time-grid">
+          <label>
+            <span>Allowed browsing time</span>
+            <input id="useSeconds" type="number" min="0.1" step="any" placeholder="e.g. 5 mins" required>
+          </label>
+
+          <label>
+            <span>Break duration</span>
+            <input id="blockSeconds" type="number" min="0.1" step="any" placeholder="e.g. 10 mins" required>
+          </label>
+        </div>
+
+        <label>
+          <span>Websites to limit</span>
+          <textarea id="sites" rows="6" placeholder="youtube.com&#10;netflix.com&#10;instagram.com" required></textarea>
+        </label>
+
+        <p class="hint">Enter times in minutes. Add one website per line or separate with commas.</p>
+
+        <div class="actions">
+          <button type="submit" class="primary">Start focus session</button>
+          <button type="button" id="stopButton" class="secondary">Stop</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

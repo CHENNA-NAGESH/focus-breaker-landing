@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blocked by Focus Breaker</title>
+    <link rel="stylesheet" href="blocked.css">
+  </head>
+  <body>
+    <div class="popup-effects" aria-hidden="true"></div>
+    <main class="blocked">
+      <div class="panel">
+        <span class="badge">Focus Breaker</span>
+        <h1>Take a Deep Breath</h1>
+        <p class="subtitle">Focus session active. Use this time to decompress.</p>
+        
+        <div class="cosmic-container">
+          <div class="cosmic-orbit outer-orbit">
+            <div class="comet comet-cyan"></div>
+          </div>
+          <div class="cosmic-orbit inner-orbit">
+            <div class="comet comet-purple"></div>
+          </div>
+          <div class="cosmic-ripple ripple-1"></div>
+          <div class="cosmic-ripple ripple-2"></div>
+          <div class="cosmic-ripple ripple-3"></div>
+          <div class="cosmic-orb">
+            <div class="countdown" aria-live="polite">
+              <span>Remaining Time</span>
+              <strong id="remainingTime">00:00:00</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="breathing-guide">
+          <span class="breath-in">Inhale</span>
+          <span class="breath-out">Exhale</span>
+        </div>
+      </div>
+    </main>
+    <script src="blocked.js"></script>
+  </body>
+</html>
