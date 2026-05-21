@@ -1,0 +1,8 @@
+{
+  "name": "focus-breaker-landing",
+  "version": "1.0.0",
+  "description": "Focus Breaker static landing page",
+  "scripts": {
+    "start": "npx -y serve -l $PORT"
+  }
+}
